@@ -1,11 +1,11 @@
 const host =
   process.argv.includes("--dev") == 1
     ? "localhost:61613"
-    : "20317bf4c6c6-webshare-stremio-addon.baby-beamup.club";
+    : "stremio-ws.onrender.com";
 
 const url =
   process.argv.includes("--dev") == 1
     ? "http://localhost:61613/"
-    : "https://20317bf4c6c6-webshare-stremio-addon.baby-beamup.club/";
+    : "https://stremio-ws.onrender.com";
 
 module.exports = { host, url };

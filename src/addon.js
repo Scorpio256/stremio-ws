@@ -10,7 +10,7 @@ const dev = process.argv.includes("--dev") == 1 ? "Dev" : "";
 
 // Docs: https://github.com/Stremio/stremio-addon-sdk/blob/master/docs/api/responses/manifest.md
 const manifest = {
-  id: "community.coffei.webshare" + dev,
+  id: "org.urbanec.webshare" + dev,
   version: pkg.version,
   catalogs: [],
   resources: ["stream"],
