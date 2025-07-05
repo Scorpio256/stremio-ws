@@ -1,6 +1,8 @@
-const tmdbPrivateKey = require("../config/keys").tmdbApiKey || null;
+require('dotenv').config();
 const needle = require("needle");
-let tmdbApiKey;
+
+let tmdbApiKey= process.env.TMDB_API_KEY;
+
 
 async function initFreeKeys() {
   const params = await require("freekeys")();
